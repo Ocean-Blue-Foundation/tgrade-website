@@ -3,6 +3,9 @@ import { device } from "./Breakpoints";
 
 export const GlobalStyles = styled.createGlobalStyle`
   :root {
+    --ff-montserrat: Montserrat;
+    --color-black: #1a1d26;
+    --color-white: #ffffff;
   }
 
   * {
@@ -16,7 +19,7 @@ export const GlobalStyles = styled.createGlobalStyle`
   input,
   select,
   textarea {
-    color: black;
+    color: var(--color-black);
 
     &:focus {
       outline: none;
@@ -30,6 +33,7 @@ export const GlobalStyles = styled.createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -55,6 +59,7 @@ export const GlobalStyles = styled.createGlobalStyle`
   h5,
   h6 {
     font-family: var(--ff-montserrat);
+    color: var(--color-black);
   }
 
   audio,
@@ -72,5 +77,20 @@ export const GlobalStyles = styled.createGlobalStyle`
 
   textarea {
     resize: vertical;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: var(--color-black);
+  }
+
+  h1,
+  h2 {
+    font-weight: 700;
+  }
+
+  h6 {
+    font-weight: 400;
   }
 `;
