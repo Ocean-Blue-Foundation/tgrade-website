@@ -1,5 +1,6 @@
 import styled, { css, keyframes } from "styled-components";
 import { device } from "../../theme/Breakpoints";
+import { setSize } from "../../theme/Functions";
 
 interface Heading {
   alternateHeader?: boolean;
@@ -120,6 +121,10 @@ export const StyledNav = styled.nav`
   display: flex;
   column-gap: 3rem;
   align-items: center;
+
+  @media ${device.smallLaptop} {
+    column-gap: ${setSize(20)};
+  }
 
   @media ${device.tablet} {
     display: none;
