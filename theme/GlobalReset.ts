@@ -144,7 +144,9 @@ export const GlobalReset = styled.createGlobalStyle`
   input:-webkit-autofill,
   textarea:-webkit-autofill,
   select:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px var(--color-light-black) inset;
+    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.2) inset;
     -webkit-text-fill-color: white;
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
   }
 `;
