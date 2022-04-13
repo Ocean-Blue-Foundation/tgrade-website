@@ -5,7 +5,7 @@ import Header from "../../sections/Header";
 interface MainLayoutProps {
   children: React.ReactNode;
   alternateHeader?: boolean;
-  activeHeaderLink: number;
+  activeHeaderLink?: number;
 }
 
 const MainLayout = ({ children, alternateHeader = false, activeHeaderLink }: MainLayoutProps) => {

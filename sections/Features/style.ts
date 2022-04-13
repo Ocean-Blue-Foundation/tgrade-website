@@ -63,7 +63,8 @@ export const StyledListText = styled.li`
   font-size: 1.6rem;
   line-height: 2.6rem;
   list-style: initial;
-  padding-left: 1.2rem;
+  padding-left: 0.6rem;
+  max-width: 218px;
 
   &::marker {
     font-size: 1rem;

@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
+import { device } from "../../theme/Breakpoints";
 
 interface Heading {
   alternateHeader?: boolean;
-  active: boolean;
 }
 
 interface Link {
@@ -23,6 +23,10 @@ export const StyledContainer = styled.div<Heading>`
     header {
       background-color: rgba(255, 255, 255, 0.97);
       box-shadow: 0px 7px 21px rgba(0, 0, 0, 0.04);
+
+      span {
+        background-color: var(--color-black);
+      }
     }
 
     path {
@@ -55,6 +59,10 @@ export const StyledContainer = styled.div<Heading>`
     `
       header {
         background: var(--color-white);
+
+        span {
+          background-color: var(--color-black);
+        }
       }
 
       path {
@@ -100,6 +108,10 @@ export const StyledNav = styled.nav`
   display: flex;
   column-gap: 3rem;
   align-items: center;
+
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 
 export const NavLink = styled.a<Link>`
