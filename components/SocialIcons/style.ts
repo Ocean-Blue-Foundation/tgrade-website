@@ -23,9 +23,5 @@ export const StyledImage = styled.a`
     @media ${device.tablet} {
       margin-left: 15px;
     }
-
-    @media ${device.mobile} {
-      margin-left: 10px;
-    }
   }
 `;

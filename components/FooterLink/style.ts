@@ -10,14 +10,4 @@ export const StyledFooterLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
-
-  @media ${device.tablet} {
-    width: 50%;
-  }
-
-  @media ${device.mobile} {
-    line-height: 1.2rem;
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
 `;
