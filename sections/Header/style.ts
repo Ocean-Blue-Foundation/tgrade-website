@@ -177,4 +177,9 @@ export const NavLink = styled.a<Link>`
 export const logo = css`
   width: 15rem;
   height: 4rem;
+
+  @media ${device.tablet} {
+    width: 12rem;
+    height: 3rem;
+  }
 `;
