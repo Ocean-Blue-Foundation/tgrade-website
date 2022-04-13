@@ -14,6 +14,10 @@ export const StyledContainer = styled.div`
   }
 
   @media ${device.tablet} {
-    padding: 0 1rem;
+    padding: 0 3rem;
+  }
+
+  @media ${device.mobile} {
+    padding: 0 1.5rem;
   }
 `;

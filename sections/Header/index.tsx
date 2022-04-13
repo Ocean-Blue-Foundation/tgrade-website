@@ -3,11 +3,13 @@ import MainContainer from "../../containers/MainContainer";
 import SvgLogo from "../../components/SvgLogo";
 import Link from "next/link";
 import BtnLink from "../../components/BtnLink";
+import BurgerButton from "../../components/BurgerButton";
 import Headroom from "react-headroom";
+import { useState } from "react";
 
 interface HeaderProps {
   alternateHeader?: boolean;
-  activeHeaderLink: number;
+  activeHeaderLink?: number;
 }
 
 const navLinks = [
@@ -41,7 +43,12 @@ const navLinks = [
   },
 ];
 
-const Header: React.FunctionComponent<HeaderProps> = ({ alternateHeader = false, activeHeaderLink }) => {
+const Header: React.FunctionComponent<HeaderProps> = ({
+  alternateHeader = false,
+  activeHeaderLink = null,
+}) => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <StyledContainer alternateHeader={alternateHeader}>
       <Headroom>
@@ -59,27 +66,6 @@ const Header: React.FunctionComponent<HeaderProps> = ({ alternateHeader = false,
                     </Link>
                   );
                 })}
-                {/* <Link href="/#welcome" passHref={true}>
-                  <NavLink>Welcome</NavLink>
-                </Link> */}
-                {/* <Link href="/#problem" passHref={true}>
-                  <NavLink>Problem</NavLink>
-                </Link> */}
-                {/* <Link href="/#solution" passHref={true}>
-                  <NavLink>Solution</NavLink>
-                </Link> */}
-                {/* <Link href="/#how-it-works" passHref={true}>
-                  <NavLink>How It Works</NavLink>
-                </Link> */}
-                {/* <Link href="/#features" passHref={true}>
-                  <NavLink>Features</NavLink>
-                </Link> */}
-                {/* <Link href="/#knowledge" passHref={true}>
-                  <NavLink>Knowledge</NavLink>
-                </Link>
-                <Link href="/#game-of-engagement" passHref={true}>
-                  <NavLink>Game of Engagement</NavLink>
-                </Link> */}
                 <BtnLink
                   text="Subscribe"
                   link="/#subscribe"
@@ -88,6 +74,11 @@ const Header: React.FunctionComponent<HeaderProps> = ({ alternateHeader = false,
                   backgroundColor="transparent"
                 />
               </StyledNav>
+              <BurgerButton
+                mobileMenuContent={navLinks}
+                isMobileMenuOpen={isMobileMenuOpen}
+                setMobileMenuOpen={setMobileMenuOpen}
+              />
             </StyledHeaderContainer>
           </MainContainer>
         </StyledHeader>

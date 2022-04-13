@@ -12,16 +12,10 @@ import {
 import Heading from "../../components/Heading";
 import React from "react";
 import MainContainer from "../../containers/MainContainer";
-import Image from "next/image";
 import Link from "next/link";
 import BtnLink from "../../components/BtnLink";
 
-interface SubscribeSectionProps {
-  headingText: string;
-  textColor?: string;
-}
-
-const SubscribeSection: React.FunctionComponent<SubscribeSectionProps> = ({ headingText, textColor }) => {
+const PressKitContent = () => {
   return (
     <StyledContainer>
       <MainContainer>
@@ -86,4 +80,4 @@ const SubscribeSection: React.FunctionComponent<SubscribeSectionProps> = ({ head
   );
 };
 
-export default SubscribeSection;
+export default PressKitContent;

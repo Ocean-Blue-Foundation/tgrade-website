@@ -54,7 +54,6 @@ const Subscribe = () => {
         ></EmailInput>
         <SubscribeButton>Submit</SubscribeButton>
       </ContactForm>
-      {console.log("isSuccessNotificationOpen", isSuccessNotificationOpen)}
       {isSuccessNotificationOpen && (
         <Alert
           title="Successfully Subscribed"
