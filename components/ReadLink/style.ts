@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { device } from "../../theme/Breakpoints";
 
 export const StyledLink = styled.a`
   font-size: 1.8rem;
@@ -16,5 +17,15 @@ export const StyledLink = styled.a`
 
   svg {
     margin-left: 1rem;
+  }
+`;
+
+export const arrow = css`
+  width: 3rem;
+  height: 3rem;
+
+  @media ${device.mobile} {
+    width: 2.4rem;
+    height: 2.4rem;
   }
 `;

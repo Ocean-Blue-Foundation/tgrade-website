@@ -1,4 +1,4 @@
-import { StyledLink } from "./style";
+import { StyledLink, arrow } from "./style";
 import Link from "next/link";
 
 interface ReadLinkProps {
@@ -10,7 +10,7 @@ const ReadLink = ({ link }: ReadLinkProps) => {
     <Link href={link} passHref={true}>
       <StyledLink target="_blank">
         Read{" "}
-        <svg width={30} height={30} fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg css={arrow} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M15 0C6.715 0 0 6.715 0 15c0 8.284 6.715 15 15 15 8.284 0 15-6.716 15-15 0-8.285-6.716-15-15-15Zm0 28.125C7.763 28.125 1.875 22.238 1.875 15 1.875 7.763 7.763 1.846 15 1.846c7.238 0 13.125 5.917 13.125 13.154 0 7.238-5.887 13.125-13.125 13.125Z"
             fill="#1A1D26"
