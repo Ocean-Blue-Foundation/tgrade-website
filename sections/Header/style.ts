@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { device } from "../../theme/Breakpoints";
 
 interface Heading {
@@ -15,11 +15,23 @@ export const StyledHeader = styled.header`
   background-color: transparent;
 `;
 
+const fadeIn = keyframes`
+  0% {
+    transform: translate3d(0px, -100%, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+`;
+
 export const StyledContainer = styled.div<Heading>`
   position: absolute;
   width: 100%;
 
-  .headroom--pinned {
+  .headroom--pinned,
+  .headroom--unpinned {
+    animation: 0.2s ${fadeIn} ease-in-out forwards;
+
     header {
       background-color: rgba(255, 255, 255, 0.97);
       box-shadow: 0px 7px 21px rgba(0, 0, 0, 0.04);
@@ -151,6 +163,10 @@ export const NavLink = styled.a<Link>`
       border-radius: 3px;
     }
   `};
+
+  &:first-child {
+    display: none;
+  }
 `;
 
 export const logo = css`

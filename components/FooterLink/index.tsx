@@ -1,5 +1,5 @@
 import { StyledFooterLink } from "./style";
-import Link from "next/link";
+// import Link from "next/link";
 
 interface FooterLinkProps {
   text: string;
@@ -8,9 +8,9 @@ interface FooterLinkProps {
 
 const FooterLink = ({ text, link }: FooterLinkProps) => {
   return (
-    <Link href={link} passHref={true}>
-      <StyledFooterLink>{text}</StyledFooterLink>
-    </Link>
+    // <Link href={link} passHref={true}>
+    <StyledFooterLink href={link}>{text}</StyledFooterLink>
+    // </Link>
   );
 };
 
