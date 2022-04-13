@@ -31,7 +31,6 @@ const Home: NextPage = () => {
 
   return (
     <MainLayout activeHeaderLink={activeHeaderLink}>
-      {console.log("activeSection", activeHeaderLink)}
       <section id="welcome" ref={sectionRefs[0]}>
         <FullBackgroundImage
           image="main-bg.jpg"
