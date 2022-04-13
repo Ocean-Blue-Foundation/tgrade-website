@@ -5,9 +5,7 @@ interface GlobalWrapperProps {
   children: React.ReactNode;
 }
 
-const GlobalWrapper: React.FunctionComponent<GlobalWrapperProps> = ({
-  children,
-}) => {
+const GlobalWrapper: React.FunctionComponent<GlobalWrapperProps> = ({ children }) => {
   return (
     <>
       <GlobalReset />
