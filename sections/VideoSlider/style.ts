@@ -8,7 +8,7 @@ export const StyledContainer = styled.div`
 export const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
 
   .slick-track {
     display: flex;
