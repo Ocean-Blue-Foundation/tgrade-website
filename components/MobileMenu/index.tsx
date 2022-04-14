@@ -30,7 +30,7 @@ const MobileMenu: React.FunctionComponent<MobileMenuProps> = ({
       <StyledNav>
         {mobileMenuContent.map(({ link, text }, index) => {
           return (
-            <Link href={link} passHref={true}>
+            <Link key={index} href={link} passHref={true}>
               <NavLink key={index} active={activeHeaderLink === index} onClick={onClose}>
                 {text}
               </NavLink>
