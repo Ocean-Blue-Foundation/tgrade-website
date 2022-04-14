@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <div id="alert" />
+          <div id="mobile-menu" />
           <NextScript />
         </body>
       </Html>

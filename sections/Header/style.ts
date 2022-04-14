@@ -4,6 +4,7 @@ import { setSize } from "../../theme/Functions";
 
 interface Heading {
   alternateHeader?: boolean;
+  isMobileMenuOpen?: boolean;
 }
 
 interface Link {
@@ -28,22 +29,35 @@ const fadeIn = keyframes`
 export const StyledContainer = styled.div<Heading>`
   position: absolute;
   width: 100%;
+  z-index: 9;
 
   .headroom--pinned,
   .headroom--unpinned {
     animation: 0.2s ${fadeIn} ease-in-out forwards;
 
     header {
-      background-color: rgba(255, 255, 255, 0.97);
-      box-shadow: 0px 7px 21px rgba(0, 0, 0, 0.04);
+      ${({ isMobileMenuOpen }) =>
+        !isMobileMenuOpen &&
+        `
+        background-color: rgba(255, 255, 255, 0.97);
+        box-shadow: 0px 7px 21px rgba(0, 0, 0, 0.04);
+      `};
 
       span {
-        background-color: var(--color-black);
+        ${({ isMobileMenuOpen }) =>
+          !isMobileMenuOpen &&
+          `
+          background-color: var(--color-black);
+        `};
       }
     }
 
     path {
-      fill: var(--color-black);
+      ${({ isMobileMenuOpen }) =>
+        !isMobileMenuOpen &&
+        `
+        fill: var(--color-black);
+      `};
     }
 
     a {

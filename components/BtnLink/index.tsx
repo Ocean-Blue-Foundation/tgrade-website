@@ -1,5 +1,6 @@
 import { StyledLink } from "./style";
 import Link from "next/link";
+import { CSSObject, CSSProp } from "styled-components";
 
 interface BtnLinkProps {
   link: string;
@@ -8,14 +9,23 @@ interface BtnLinkProps {
   borderColor: string;
   backgroundColor: string;
   fileName?: string;
+  cssBtn?: CSSProp | CSSObject;
 }
 
-const BtnLink = ({ link, text, color, borderColor, backgroundColor, fileName = "" }: BtnLinkProps) => {
+const BtnLink = ({
+  link,
+  text,
+  color,
+  cssBtn,
+  borderColor,
+  backgroundColor,
+  fileName = "",
+}: BtnLinkProps) => {
   return (
     <>
       {!fileName ? (
         <Link href={link} passHref={true}>
-          <StyledLink color={color} borderColor={borderColor} backgroundColor={backgroundColor}>
+          <StyledLink css={cssBtn} color={color} borderColor={borderColor} backgroundColor={backgroundColor}>
             {text}
           </StyledLink>
         </Link>
@@ -26,6 +36,7 @@ const BtnLink = ({ link, text, color, borderColor, backgroundColor, fileName = "
           color={color}
           borderColor={borderColor}
           backgroundColor={backgroundColor}
+          css={cssBtn}
         >
           {text}
         </StyledLink>

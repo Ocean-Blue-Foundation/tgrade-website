@@ -1,5 +1,5 @@
 import { StyledBurger, StyledLine } from "./style";
-// import MobileMenu from "../MobileMenu";
+import MobileMenu from "../MobileMenu";
 
 interface ButtonProps {
   mobileMenuContent: Array<{
@@ -8,12 +8,14 @@ interface ButtonProps {
   }>;
   setMobileMenuOpen: (open: boolean) => void;
   isMobileMenuOpen: boolean;
+  activeHeaderLink?: number | null;
 }
 
 const BurgerButton: React.FunctionComponent<ButtonProps> = ({
   mobileMenuContent,
   isMobileMenuOpen,
   setMobileMenuOpen,
+  activeHeaderLink = null,
 }) => {
   return (
     <>
@@ -22,12 +24,13 @@ const BurgerButton: React.FunctionComponent<ButtonProps> = ({
         <StyledLine isMobileMenuOpen={isMobileMenuOpen} />
         <StyledLine isMobileMenuOpen={isMobileMenuOpen} />
       </StyledBurger>
-      {/* {isMobileMenuOpen && (
+      {isMobileMenuOpen && (
         <MobileMenu
           onClose={() => setMobileMenuOpen(false)}
           mobileMenuContent={mobileMenuContent}
+          activeHeaderLink={activeHeaderLink}
         />
-      )} */}
+      )}
     </>
   );
 };
