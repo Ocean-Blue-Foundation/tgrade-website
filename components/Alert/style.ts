@@ -4,7 +4,7 @@ export const StyledAlert = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 2rem;
+  top: 10rem;
   right: 2rem;
   position: fixed;
   width: 38rem;

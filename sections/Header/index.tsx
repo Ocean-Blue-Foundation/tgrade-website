@@ -51,7 +51,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
 
   return (
     <StyledContainer alternateHeader={alternateHeader}>
-      <Headroom>
+      <Headroom pinStart={0}>
         <StyledHeader>
           <MainContainer>
             <StyledHeaderContainer>

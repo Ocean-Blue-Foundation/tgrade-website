@@ -22,4 +22,11 @@ export const heading = css`
   font-size: 3rem;
   line-height: 3.7rem;
   padding-bottom: 2rem;
+  text-align: center;
+
+  @media ${device.mobile} {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    padding-bottom: 1.6rem;
+  }
 `;

@@ -13,7 +13,7 @@ export const StyledContainer = styled.div`
     padding: 0 10rem;
   }
 
-  @media ${device.tablet} {
+  @media ${device.smallLaptop} {
     padding: 0 3rem;
   }
 

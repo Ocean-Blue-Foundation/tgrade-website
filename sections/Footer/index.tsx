@@ -1,4 +1,12 @@
-import { StyledEmailLink, FooterContainer, Wrapper, FooterNav, FooterContent, logo } from "./style";
+import {
+  StyledEmailLink,
+  FooterContainer,
+  Wrapper,
+  WrapperLeft,
+  FooterNav,
+  FooterContent,
+  logo,
+} from "./style";
 import MainContainer from "../../containers/MainContainer";
 import FooterLink from "../../components/FooterLink";
 import SvgLogo from "../../components/SvgLogo";
@@ -11,13 +19,13 @@ const Footer = () => {
     <FooterContainer>
       <MainContainer>
         <FooterContent>
-          <Wrapper>
+          <WrapperLeft>
             <SvgLogo css={logo} />
             <p css={ReusableStyles.paragraphWhite}>
               This website is maintained by Confio. The contents and opinions of this website are those of
               Confio and might not be consessus in the Tgrade ecosystem.
             </p>
-          </Wrapper>
+          </WrapperLeft>
           <FooterNav>
             <FooterLink text="Privacy Policy" link="/privacy-policy" />
             <FooterLink text="Press kit" link="/press-kit" />

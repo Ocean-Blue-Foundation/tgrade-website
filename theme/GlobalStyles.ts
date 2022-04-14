@@ -83,6 +83,11 @@ export const GlobalStyles = styled.createGlobalStyle`
     font-size: 1.6rem;
     line-height: 3rem;
     color: var(--color-black);
+
+    @media ${device.mobile} {
+      font-size: 1.3rem;
+      line-height: 3rem;
+    }
   }
 
   h1,

@@ -7,6 +7,10 @@ export const StyledFooterLink = styled.a`
   color: #ffffff;
   text-decoration: none;
 
+  @media ${device.mobile} {
+    font-size: 1.3rem;
+  }
+
   &:hover {
     text-decoration: underline;
   }
