@@ -11,3 +11,10 @@ export const setSizeMobile = (size: number) => {
 
   return `${size / context}vw`;
 };
+
+export const setSizeDesktop = (size: number) => {
+  const viewport = 1728;
+  const context = viewport * 0.01;
+
+  return `${size / context}vw`;
+};

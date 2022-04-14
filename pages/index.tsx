@@ -37,6 +37,7 @@ const Home: NextPage = () => {
           headingText="The Big Bang of Regulated Blockchain"
           subHeadingText="Welcome To Tgrade"
           textColor="var(--color-white)"
+          responsive={true}
         >
           <p css={ReusableStyles.paragraphWhite}>
             Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations,
