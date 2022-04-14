@@ -40,15 +40,15 @@ const FullBackgroundImage: React.FunctionComponent<FullBackgroundImageProps> = (
               </StyledLink>
               <StyledLink>
                 <StyledLinkText>What is Institutional DeFi?</StyledLinkText>
-                <ReadLink link="https://medium.com/tgradefinance/securing-a-blockchain-with-proof-of-engagement-b13daa9befc" />
+                <ReadLink link="https://medium.com/tgradefinance/what-is-institutional-defi-6ad84f61ac82" />
               </StyledLink>
               <StyledLink>
                 <StyledLinkText>How to build a MiCA compliant business on Tgrade</StyledLinkText>
-                <ReadLink link="https://medium.com/tgradefinance/securing-a-blockchain-with-proof-of-engagement-b13daa9befc" />
+                <ReadLink link="https://medium.com/tgradefinance/how-to-build-a-mica-compliant-business-on-tgrade-556feb656a21" />
               </StyledLink>
               <StyledLink>
                 <StyledLinkText>A Decentralised Social Organisation</StyledLinkText>
-                <ReadLink link="https://medium.com/tgradefinance/securing-a-blockchain-with-proof-of-engagement-b13daa9befc" />
+                <ReadLink link="https://medium.com/tgradefinance/a-decentralised-social-organisation-770835595c3d" />
               </StyledLink>
             </StyledLinksContainer>
           </StyledRightContent>

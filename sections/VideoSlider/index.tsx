@@ -94,68 +94,13 @@ const FullBackgroundImage: React.FunctionComponent<FullBackgroundImageProps> = (
             <StyledSlide>
               <StyledVideo>
                 <iframe
-                  src="https://www.youtube.com/embed/rbD2A_Gj3pc"
+                  src="https://www.youtube.com/embed/H6akA8mx3iQ"
                   frameBorder="0"
                   allowFullScreen={true}
                 />
               </StyledVideo>
-              <Heading level={4} text="Cryptocito" cssHeading={videoHeading} />
-              <p>Cosmos Smart Contracts (COSMWASM) and Cosmos for Institutions (Tgrade Finance)</p>
-            </StyledSlide>
-            <StyledSlide>
-              <StyledVideo>
-                <iframe
-                  src="https://www.youtube.com/embed/fQAwy7M_2uc"
-                  frameBorder="0"
-                  allowFullScreen={true}
-                />
-              </StyledVideo>
-              <Heading level={4} text="Citizen Cosmos" cssHeading={videoHeading} />
-              <p>Citizen Cosmos: Ethan Frey, values, engagement & the interchain, #35</p>
-            </StyledSlide>
-            <StyledSlide>
-              <StyledVideo>
-                <iframe
-                  src="https://www.youtube.com/embed/DKK0MG-Uv5U"
-                  frameBorder="0"
-                  allowFullScreen={true}
-                />
-              </StyledVideo>
-              <Heading level={4} text="Cøsmoverse" cssHeading={videoHeading} />
-              <p>Martin Worner - T-Grade Regulating DEFI through CØSMOS</p>
-            </StyledSlide>
-            <StyledSlide>
-              <StyledVideo>
-                <iframe
-                  src="https://www.youtube.com/embed/rbD2A_Gj3pc"
-                  frameBorder="0"
-                  allowFullScreen={true}
-                />
-              </StyledVideo>
-              <Heading level={4} text="Cryptocito" cssHeading={videoHeading} />
-              <p>Cosmos Smart Contracts (COSMWASM) and Cosmos for Institutions (Tgrade Finance)</p>
-            </StyledSlide>
-            <StyledSlide>
-              <StyledVideo>
-                <iframe
-                  src="https://www.youtube.com/embed/fQAwy7M_2uc"
-                  frameBorder="0"
-                  allowFullScreen={true}
-                />
-              </StyledVideo>
-              <Heading level={4} text="Citizen Cosmos" cssHeading={videoHeading} />
-              <p>Citizen Cosmos: Ethan Frey, values, engagement & the interchain, #35</p>
-            </StyledSlide>
-            <StyledSlide>
-              <StyledVideo>
-                <iframe
-                  src="https://www.youtube.com/embed/DKK0MG-Uv5U"
-                  frameBorder="0"
-                  allowFullScreen={true}
-                />
-              </StyledVideo>
-              <Heading level={4} text="Cøsmoverse" cssHeading={videoHeading} />
-              <p>Martin Worner - T-Grade Regulating DEFI through CØSMOS</p>
+              <Heading level={4} text="Chjango Unchained" cssHeading={videoHeading} />
+              <p>CosmWasm: How you can write Cosmos smart contracts in Rust</p>
             </StyledSlide>
           </Slider>
         </StyledWrapper>
