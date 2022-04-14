@@ -29,6 +29,7 @@ const FullBackgroundImage: React.FunctionComponent<FullBackgroundImageProps> = (
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          swipe: true,
         },
       },
       {
@@ -36,6 +37,7 @@ const FullBackgroundImage: React.FunctionComponent<FullBackgroundImageProps> = (
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          swipe: true,
         },
       },
     ],
