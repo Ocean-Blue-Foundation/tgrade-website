@@ -50,7 +50,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <StyledContainer alternateHeader={alternateHeader}>
+    <StyledContainer alternateHeader={alternateHeader} isMobileMenuOpen={isMobileMenuOpen}>
       <Headroom pinStart={0}>
         <StyledHeader>
           <MainContainer>
@@ -78,6 +78,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                 mobileMenuContent={navLinks}
                 isMobileMenuOpen={isMobileMenuOpen}
                 setMobileMenuOpen={setMobileMenuOpen}
+                activeHeaderLink={activeHeaderLink}
               />
             </StyledHeaderContainer>
           </MainContainer>
