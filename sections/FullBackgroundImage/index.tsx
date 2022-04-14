@@ -10,6 +10,7 @@ interface FullBackgroundImageProps {
   children: React.ReactNode;
   textColor?: string;
   headingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
+  responsive?: boolean;
 }
 
 const FullBackgroundImage: React.FunctionComponent<FullBackgroundImageProps> = ({
@@ -19,9 +20,10 @@ const FullBackgroundImage: React.FunctionComponent<FullBackgroundImageProps> = (
   children,
   textColor,
   headingLevel = 1,
+  responsive = false,
 }) => {
   return (
-    <StyledContainer image={image}>
+    <StyledContainer image={image} responsive={responsive}>
       <MainContainer>
         <StyledContent>
           {subHeadingText && (

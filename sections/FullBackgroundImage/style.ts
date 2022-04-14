@@ -1,8 +1,10 @@
 import styled, { css } from "styled-components";
 import { device } from "../../theme/Breakpoints";
+import { setSizeDesktop } from "../../theme/Functions";
 
 interface StyledFullBackgroundImage {
   image: string;
+  responsive: boolean;
 }
 
 export const StyledContainer = styled.div<StyledFullBackgroundImage>`
@@ -10,8 +12,20 @@ export const StyledContainer = styled.div<StyledFullBackgroundImage>`
   background-image: ${({ image }) => (image ? `url(/${image})` : "")};
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   width: 100%;
+
+  ${({ responsive }) =>
+    responsive &&
+    `
+  @media ${device.responsiveLaptop} {
+    height: ${setSizeDesktop(883)};
+  }
+
+  @media ${device.bigLaptop} {
+    height: 100vh;
+  }
+`};
 
   @media ${device.tablet} {
     height: 56.8rem;
