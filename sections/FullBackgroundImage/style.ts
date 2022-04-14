@@ -18,14 +18,25 @@ export const StyledContainer = styled.div<StyledFullBackgroundImage>`
   ${({ responsive }) =>
     responsive &&
     `
-  @media ${device.responsiveLaptop} {
-    height: ${setSizeDesktop(883)};
-  }
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4));
+    }
 
-  @media ${device.bigLaptop} {
-    height: 100vh;
-  }
-`};
+    @media ${device.responsiveLaptop} {
+      height: ${setSizeDesktop(883)};
+    }
+
+    @media ${device.bigLaptop} {
+      height: 100vh;
+    }
+  `};
 
   @media ${device.tablet} {
     height: 56.8rem;

@@ -13,11 +13,22 @@ export const StyledContainer = styled.div`
   z-index: 2;
   width: 100%;
   padding: 9.5rem 0 4rem;
-  background-image: url("/main-bg-mobile.jpg");
+  background-image: url("/main-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4));
+  }
 `;
 
 export const StyledNav = styled.nav`
