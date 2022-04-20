@@ -10,6 +10,25 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Tgrade</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <meta property="og:title" content="The Big Bang of Regulated Blockchain" />
+        <meta property="twitter:title" content="The Big Bang of Regulated Blockchain" />
+
+        <meta
+          property="description"
+          content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
+        />
+        <meta
+          property="og:description"
+          content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
+        />
+        <meta
+          name="twitter:description"
+          content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
+        />
+
+        <meta property="og:image" content="/main-bg.jpg" />
+        <meta name="twitter:image" content="/main-bg.jpg" />
       </Head>
       <GlobalWrapper>
         <Component {...pageProps} />
