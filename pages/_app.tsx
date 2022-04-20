@@ -27,8 +27,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
         />
 
-        <meta property="og:image" content="/main-bg.jpg" />
-        <meta name="twitter:image" content="/main-bg.jpg" />
+        <meta property="og:image" content="/post-img.png" />
+        <meta name="twitter:image" content="/post-img.png" />
       </Head>
       <GlobalWrapper>
         <Component {...pageProps} />
