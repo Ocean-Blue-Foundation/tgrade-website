@@ -26,6 +26,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="twitter:description"
           content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
         />
+        <meta
+          name="twitter:card"
+          property="twitter:card"
+          content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
+        />
 
         <meta property="og:image" content="/post-img.png" />
         <meta name="twitter:image" content="/post-img.png" />
