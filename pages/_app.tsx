@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
         />
-        <meta property="og:image" content="%PUBLIC_URL%/main-bg.jpg" />
+        <meta property="og:image" content="/main-bg.jpg" />
       </Head>
       <GlobalWrapper>
         <Component {...pageProps} />
