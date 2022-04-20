@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:card" property="twitter:card" content="summary" />
 
         <meta property="og:image" content="/post-img.png" />
-        <meta name="twitter:image" content="/post-img.png" />
+        <meta name="twitter:image" property="twitter:image" content="/post-img.png" />
       </Head>
       <GlobalWrapper>
         <Component {...pageProps} />
