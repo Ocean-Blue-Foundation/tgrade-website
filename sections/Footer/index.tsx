@@ -23,7 +23,7 @@ const Footer = () => {
             <SvgLogo css={logo} />
             <p css={ReusableStyles.paragraphWhite}>
               This website is maintained by Confio. The contents and opinions of this website are those of
-              Confio and might not be consessus in the Tgrade ecosystem.
+              Confio and might not be consensus in the Tgrade ecosystem.
             </p>
           </WrapperLeft>
           <FooterNav>
