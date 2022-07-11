@@ -59,10 +59,8 @@ const Header: React.FunctionComponent<HeaderProps> = ({
               <StyledNav>
                 {navLinks.map(({ link, text }, index) => {
                   return (
-                    <Link href={link} passHref={true}>
-                      <NavLink key={index} active={activeHeaderLink === index}>
-                        {text}
-                      </NavLink>
+                    <Link key={text} href={link} passHref={true}>
+                      <NavLink active={activeHeaderLink === index}>{text}</NavLink>
                     </Link>
                   );
                 })}
