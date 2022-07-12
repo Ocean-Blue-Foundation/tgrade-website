@@ -18,24 +18,20 @@ const navLinks = [
     text: "Welcome",
   },
   {
-    link: "/#problem",
-    text: "Problem",
+    link: "/#people",
+    text: "People",
   },
   {
-    link: "/#solution",
-    text: "Solution",
+    link: "/#platform",
+    text: "Platform",
   },
   {
-    link: "/#how-it-works",
-    text: "How It Works",
+    link: "/#business",
+    text: "Business",
   },
   {
-    link: "/#features",
-    text: "Features",
-  },
-  {
-    link: "/#knowledge",
-    text: "Knowledge",
+    link: "/#partner",
+    text: "Partner",
   },
   {
     link: "/#game-of-engagement",
@@ -65,8 +61,8 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                   );
                 })}
                 <BtnLink
-                  text="Subscribe"
-                  link="/#subscribe"
+                  text="Try Tgrade App"
+                  link="https://dapp.tgrade.finance/trustedcircle"
                   color="var(--color-white)"
                   borderColor="var(--color-white)"
                   backgroundColor="transparent"
