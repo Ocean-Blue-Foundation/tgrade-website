@@ -11,6 +11,7 @@ interface FullBackgroundVideoProps {
   textColor?: string;
   headingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
   maxWidth?: number;
+  poster: string;
 }
 
 const FullBackgroundVideo: React.FunctionComponent<FullBackgroundVideoProps> = ({
@@ -20,11 +21,12 @@ const FullBackgroundVideo: React.FunctionComponent<FullBackgroundVideoProps> = (
   textColor,
   headingLevel = 1,
   maxWidth = 62,
+  poster,
 }) => {
   return (
     <>
       <StyledContainer>
-        <video id="background-video" loop autoPlay muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <video id="background-video" loop autoPlay muted poster={poster}>
           <source src={video} type="video/mp4" />
         </video>
         {console.log("video", video)}

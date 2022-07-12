@@ -22,6 +22,7 @@ const Home: NextPage = () => {
       <section id="welcome" ref={sectionRefs[0]}>
         <FullBackgroundVideo
           video="hero-video-bg.mp4"
+          poster="hero-video-poster.png"
           headingText="Business solving real-world problems"
           textColor="var(--color-white)"
           maxWidth={100}
@@ -41,7 +42,7 @@ const Home: NextPage = () => {
       </section>
       <section id="people" ref={sectionRefs[1]}>
         <FullBackgroundImage
-          image="people-bg.jpg"
+          image="people-bg.png"
           headingText="To bring people together"
           textColor="var(--color-black)"
           headingLevel={2}
@@ -84,7 +85,7 @@ const Home: NextPage = () => {
           />
         </FullBackgroundImage>
         <FullBackgroundImage
-          image="safe-bg.jpg"
+          image="safe-bg.png"
           headingText="We give businesses a safe blockchain home"
           textColor="var(--color-black)"
           headingLevel={2}
@@ -104,6 +105,7 @@ const Home: NextPage = () => {
       <section id="business" ref={sectionRefs[3]}>
         <FullBackgroundVideo
           video="business-video-bg.mp4"
+          poster="business-video-poster.png"
           headingText="Revolutionize your business with blockchain!"
           textColor="var(--color-white)"
           headingLevel={2}
@@ -122,7 +124,7 @@ const Home: NextPage = () => {
       </section>
       <section id="game-of-engagement" ref={sectionRefs[5]}>
         <FullBackgroundImage
-          image="engagement-bg.jpg"
+          image="engagement-bg.png"
           headingText="Play a Game of Tgrade Engagement 2022"
           textColor="var(--color-white)"
           headingLevel={2}
