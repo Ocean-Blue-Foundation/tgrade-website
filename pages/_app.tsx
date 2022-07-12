@@ -14,18 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:title" content="The Big Bang of Regulated Blockchain" />
         <meta property="twitter:title" content="The Big Bang of Regulated Blockchain" />
 
-        <meta
-          property="description"
-          content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
-        />
-        <meta
-          property="og:description"
-          content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
-        />
-        <meta
-          name="twitter:description"
-          content="Our vision is for self-sovereign groups, bound by their local jurisdiction and regulations, trading P2P programmable financial instruments."
-        />
+        <meta property="description" content="Business solving real-world problems." />
+        <meta property="og:description" content="Business solving real-world problems." />
+        <meta name="twitter:description" content="Business solving real-world problems." />
         <meta name="twitter:card" property="twitter:card" content="summary_large_image" />
 
         <meta property="og:image" content="/post-img.png" />
