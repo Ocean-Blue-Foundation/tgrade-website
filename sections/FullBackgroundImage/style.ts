@@ -7,6 +7,12 @@ interface StyledFullBackgroundImage {
   responsive: boolean;
 }
 
+interface StyledContent {
+  align: "left" | "center" | "right";
+  verticalAlign: "start" | "center" | "end";
+  maxWidth: number;
+}
+
 export const StyledContainer = styled.div<StyledFullBackgroundImage>`
   height: 79rem;
   background-image: ${({ image }) => (image ? `url(/${image})` : "")};
@@ -43,13 +49,15 @@ export const StyledContainer = styled.div<StyledFullBackgroundImage>`
   }
 `;
 
-export const StyledContent = styled.div`
+export const StyledContent = styled.div<StyledContent>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  max-width: 63rem;
-  padding: 3rem 0 10rem;
+  max-width: ${({ maxWidth }) => `${maxWidth}rem`};
+  padding: 3rem 0 9rem;
+  position: relative;
+  z-index: 1;
 
   @media ${device.tablet} {
     padding: 3rem 0 0;
@@ -59,6 +67,33 @@ export const StyledContent = styled.div`
     max-width: 48rem;
     padding: 0;
   }
+
+  ${({ verticalAlign }) =>
+    verticalAlign === "start" &&
+    `
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    padding: 13rem 0 3rem;
+
+    @media ${device.tablet} {
+      padding: 5rem 0 0;
+    }
+  `};
+
+  ${({ align }) =>
+    align !== "left" &&
+    `
+    text-align: ${align};
+    align-items: ${align};
+    margin: auto;
+  `};
+
+  ${({ align }) =>
+    align === "right" &&
+    `
+    margin-right: 0;
+  `};
 
   p + p {
     padding-top: 3rem;
@@ -82,8 +117,8 @@ export const heading = css`
 `;
 
 export const headingSmall = css`
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 4.9rem;
   padding-bottom: 1rem;
 
   @media ${device.mobile} {
