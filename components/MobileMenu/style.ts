@@ -13,7 +13,8 @@ export const StyledContainer = styled.div`
   z-index: 2;
   width: 100%;
   padding: 9.5rem 0 4rem;
-  background-image: url("/main-bg.jpg");
+  background: var(--color-black);
+  /* background-image: url("/main-bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

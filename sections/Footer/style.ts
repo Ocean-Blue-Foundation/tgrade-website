@@ -33,7 +33,7 @@ export const FooterContent = styled.div`
   display: grid;
   margin-right: 50px;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   grid-template-columns: 343px 189px 253px;
   flex-wrap: wrap;
 
@@ -68,7 +68,7 @@ export const StyledEmailLink = styled.a`
 export const logo = css`
   width: 12rem;
   height: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   @media ${device.mobile} {
     width: 7.4rem;

@@ -18,24 +18,20 @@ const navLinks = [
     text: "Welcome",
   },
   {
-    link: "/#problem",
-    text: "Problem",
+    link: "/#people",
+    text: "People",
   },
   {
-    link: "/#solution",
-    text: "Solution",
+    link: "/#platform",
+    text: "Platform",
   },
   {
-    link: "/#how-it-works",
-    text: "How It Works",
+    link: "/#business",
+    text: "Business",
   },
   {
-    link: "/#features",
-    text: "Features",
-  },
-  {
-    link: "/#knowledge",
-    text: "Knowledge",
+    link: "/#partner",
+    text: "Partner",
   },
   {
     link: "/#game-of-engagement",
@@ -59,16 +55,14 @@ const Header: React.FunctionComponent<HeaderProps> = ({
               <StyledNav>
                 {navLinks.map(({ link, text }, index) => {
                   return (
-                    <Link href={link} passHref={true}>
-                      <NavLink key={index} active={activeHeaderLink === index}>
-                        {text}
-                      </NavLink>
+                    <Link key={text} href={link} passHref={true}>
+                      <NavLink active={activeHeaderLink === index}>{text}</NavLink>
                     </Link>
                   );
                 })}
                 <BtnLink
-                  text="Subscribe"
-                  link="/#subscribe"
+                  text="Try Tgrade App"
+                  link="https://try.tgrade.finance/"
                   color="var(--color-white)"
                   borderColor="var(--color-white)"
                   backgroundColor="transparent"
