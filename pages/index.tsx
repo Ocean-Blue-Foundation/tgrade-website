@@ -59,7 +59,7 @@ const Home: NextPage = () => {
       </section>
       <section id="platform" ref={sectionRefs[2]}>
         <FullBackgroundImage
-          image="platform-bg.jpg"
+          image="platform-bg.png"
           headingText="A Revolutionary Platform"
           textColor="var(--color-black)"
           headingLevel={2}
