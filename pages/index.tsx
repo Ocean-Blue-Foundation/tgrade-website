@@ -138,7 +138,7 @@ const Home: NextPage = () => {
             time on each Monday morning.
           </p>
           <p css={cn(ReusableStyles.paragraphWhite, ReusableStyles.maxWidth3)}>
-            Dates and challenges will be announced in Q2 2022.
+            Dates and challenges will be announced in Q4 2022.
           </p>
         </FullBackgroundImage>
       </section>
