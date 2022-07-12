@@ -21,7 +21,7 @@ const Home: NextPage = () => {
     <MainLayout activeHeaderLink={activeHeaderLink}>
       <section id="welcome" ref={sectionRefs[0]}>
         <FullBackgroundVideo
-          video="hero-video-bg.mp4"
+          video="hero-video-bg.mov"
           poster="hero-video-poster.png"
           headingText="Business solving real-world problems"
           textColor="var(--color-white)"
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
       </section>
       <section id="business" ref={sectionRefs[3]}>
         <FullBackgroundVideo
-          video="business-video-bg.mp4"
+          video="business-video-bg.mov"
           poster="business-video-poster.png"
           headingText="Revolutionize your business with blockchain!"
           textColor="var(--color-white)"
