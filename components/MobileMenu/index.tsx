@@ -38,8 +38,8 @@ const MobileMenu: React.FunctionComponent<MobileMenuProps> = ({
           );
         })}
         <BtnLink
-          text="Subscribe"
-          link="/#subscribe"
+          text="Try Tgrade App"
+          link="https://dapp.tgrade.finance/trustedcircle"
           color="var(--color-white)"
           borderColor="var(--color-white)"
           backgroundColor="transparent"
