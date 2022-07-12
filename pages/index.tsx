@@ -138,13 +138,6 @@ const Home: NextPage = () => {
           <p css={cn(ReusableStyles.paragraphWhite, ReusableStyles.maxWidth3)}>
             Dates and challenges will be announced in Q2 2022.
           </p>
-          {/* <BtnLink
-            text="Send a Request"
-            link="https://try.tgrade.finance/"
-            color="var(--color-black)"
-            borderColor="var(--color-white)"
-            backgroundColor="var(--color-white)"
-          /> */}
         </FullBackgroundImage>
       </section>
     </MainLayout>
