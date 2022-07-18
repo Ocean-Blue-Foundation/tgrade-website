@@ -38,7 +38,7 @@ const SocialIcons = () => {
           </svg>
         </StyledImage>
       </Link>
-      <Link href="https://www.coingecko.com/en/coins/tgradee" passHref={true}>
+      <Link href="https://www.coingecko.com/en/coins/tgrade" passHref={true}>
         <StyledImage target="_blank">
           <svg width={30} height={30} fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
