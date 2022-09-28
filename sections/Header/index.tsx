@@ -33,10 +33,10 @@ const navLinks = [
     link: "/#partner",
     text: "Partner",
   },
-  {
-    link: "/#game-of-engagement",
-    text: "Game of Engagement",
-  },
+  // {
+  //   link: "/#game-of-engagement",
+  //   text: "Game of Engagement",
+  // },
 ];
 
 const Header: React.FunctionComponent<HeaderProps> = ({

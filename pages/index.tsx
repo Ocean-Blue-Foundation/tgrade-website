@@ -122,7 +122,7 @@ const Home: NextPage = () => {
       <section id="partner" ref={sectionRefs[4]}>
         <Partner headingText="Investor & Strategic partner" />
       </section>
-      <section id="game-of-engagement" ref={sectionRefs[5]}>
+      {/* <section id="game-of-engagement" ref={sectionRefs[5]}>
         <FullBackgroundImage
           image="engagement-bg.png"
           headingText="Play a Game of Tgrade Engagement 2022"
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
             Dates and challenges will be announced in Q4 2022.
           </p>
         </FullBackgroundImage>
-      </section>
+      </section> */}
     </MainLayout>
   );
 };
