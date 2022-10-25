@@ -37,19 +37,19 @@ ${({ responsive }) =>
 `};
 
 @media ${device.tablet} {
-    width:100%;
     height:100vh;
-h1  {
-    padding-bottom: 1rem;
-    font-size: 2.4rem;
-    line-height: 3.4rem;
-}
-p {
-    padding-bottom: 1rem;
-    font-size: 2.4rem;
-    line-height: 3.4rem;
-}
-}
+    width:100%;
+    h1  {
+        padding-bottom: 1rem;
+        font-size: 0.4rem;
+        line-height: 3.4rem;
+    }
+    p {
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+      }
 @media ${device.mobile} {
 height:100vh;
 width:100%;
