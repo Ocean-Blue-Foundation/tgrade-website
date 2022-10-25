@@ -56,8 +56,6 @@ export const StyledContent = styled.div<StyledContent>`
   height: 100%;
   max-width: ${({ maxWidth }) => `${maxWidth}rem`};
   padding: 3rem 0 9rem;
-  margin-left: 25%;
-
   position: relative;
   z-index: 1;
 
@@ -89,13 +87,21 @@ export const StyledContent = styled.div<StyledContent>`
     text-align: ${align};
     align-items: ${align};
     margin: auto;
+    
   `};
 
   ${({ align }) =>
     align === "right" &&
     `
     margin-right: 0;
+
   `};
+  ${({ align }) =>
+    align === "left" &&
+    `
+  margin-left: 29%;
+
+`};
 
   p + p {
     padding-top: 3rem;
