@@ -51,16 +51,14 @@ const Home: NextPage = () => {
         <FullBackgroundImage
           image="1.jpg"
           headingText=""
-          textColor="var(--color-white)"
+          textColor="var(--color-black)"
           headingLevel={2}
           align="center"
           verticalAlign="center"
         >
           <GlassWrapper>
-            <h1 style={{ fontSize: "32px", marginBottom: "10px", color: "white" }}>
-              A public, decentralised blockchain
-            </h1>
-            <p css={cn(ReusableStyles.paragraphWhite, ReusableStyles.maxWidth2)}>
+            <h1 style={{ fontSize: "32px", marginBottom: "10px" }}>A public, decentralised blockchain</h1>
+            <p css={cn(ReusableStyles.paragraphBlack, ReusableStyles.maxWidth2)}>
               The case for a public, decentralised, secure blockchain is strong. Public blockchains are
               resilient by design as they are run by a group of independent node operators who are aligned
               through a framework of incentives and punishments.
@@ -82,10 +80,8 @@ const Home: NextPage = () => {
           verticalAlign="center"
         >
           <GlassWrapper>
-            <h1 style={{ fontSize: "32px", marginBottom: "10px", color: "white" }}>
-              Trusted Circles unleashed
-            </h1>
-            <p css={cn(ReusableStyles.paragraphWhite, ReusableStyles.maxWidth2)}>
+            <h1 style={{ fontSize: "32px", marginBottom: "10px" }}>Trusted Circles unleashed</h1>
+            <p css={cn(ReusableStyles.paragraphBlack, ReusableStyles.maxWidth2)}>
               The biggest problem for regulated businesses or businesses that need to know about the origin of
               funds or who they are dealing with is the pseudo-anonymous blockchain addresses.
               <br />
@@ -100,10 +96,6 @@ const Home: NextPage = () => {
               maintains a Trusted Circle is free to decide the governance.
               <br />
               <br />
-              The Trusted Circles have the tools to issue digital assets and permission them to the group or
-              to link custom smart contracts to a Trusted Circle. Linking smart contracts and/or digital
-              assets to Trusted Circles ensure only those addresses that belong to the Trusted Circle can swap
-              or transfer assets that are tied to the Trusted Circle.
             </p>
           </GlassWrapper>
         </FullBackgroundImage>
@@ -118,7 +110,7 @@ const Home: NextPage = () => {
           maxWidth={90}
         >
           <GlassWrapper>
-            <h1 style={{ fontSize: "32px", marginBottom: "30px", color: "white" }}>Articles</h1>
+            <h1 style={{ fontSize: "32px", marginBottom: "30px" }}>Articles</h1>
             <p css={ReusableStyles.paragraphBlack}>
               <br />
               <a href="https://medium.com/tgradefinance/securitization-of-proof-of-stake-the-path-to-regulated-validators-9574f52c82e8">
