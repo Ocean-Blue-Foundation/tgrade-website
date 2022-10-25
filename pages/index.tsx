@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import FullBackgroundImage from "../sections/FullBackgroundImage";
-import FullBackgroundVideo from "../sections/FullBackgroundVideo";
 import Partner from "../sections/Partner";
 import ReusableStyles from "../theme/ReusableStyles";
 import BtnLink from "../components/BtnLink";

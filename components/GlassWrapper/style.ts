@@ -2,7 +2,11 @@ import Styled from "styled-components";
 import { device } from "../../theme/Breakpoints";
 import { setSizeDesktop } from "../../theme/Functions";
 
-export const GlassWrapper = Styled.div`
+interface GlassWrapperIE {
+  responsive: boolean;
+}
+
+export const GlassWrapper = Styled.div<GlassWrapperIE>`
 padding:25px;
 margin:50px;
 margin-top:100px;
