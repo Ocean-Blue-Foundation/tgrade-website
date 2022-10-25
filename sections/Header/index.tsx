@@ -62,7 +62,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                 })}
                 <BtnLink
                   text="Try Tgrade App"
-                  link="https://try.tgrade.finance/"
+                  link="https://dapp.tgrade.finance/"
                   color="var(--color-white)"
                   borderColor="var(--color-white)"
                   backgroundColor="transparent"

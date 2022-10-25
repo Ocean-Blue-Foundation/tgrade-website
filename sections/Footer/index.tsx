@@ -21,7 +21,7 @@ const Footer = () => {
         <FooterContent>
           <WrapperLeft>
             <SvgLogo css={logo} />
-            <p css={ReusableStyles.copyright}>© {new Date().getFullYear()} by Confio GmbH</p>
+            <p css={ReusableStyles.copyright}>© {new Date().getFullYear()} by Stichting Ocean Blue</p>
           </WrapperLeft>
           <FooterNav>
             <FooterLink text="Privacy Policy" link="/privacy-policy" />

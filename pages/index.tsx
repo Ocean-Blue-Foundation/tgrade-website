@@ -20,65 +20,111 @@ const Home: NextPage = () => {
   return (
     <MainLayout activeHeaderLink={activeHeaderLink}>
       <section id="welcome" ref={sectionRefs[0]}>
-        <FullBackgroundVideo
-          video="hero-video-bg.mp4"
-          poster="hero-video-poster.png"
-          headingText="Business solving real-world problems"
+        <FullBackgroundImage
+          image="tg_dark_bgpattern.png"
+          headingText="Your Real World Assets protected by Trusted Circles"
           textColor="var(--color-white)"
-          maxWidth={100}
+          headingLevel={2}
+          align="center"
+          verticalAlign="center"
         >
           <p css={cn(ReusableStyles.paragraphWhite, ReusableStyles.maxWidth1, ReusableStyles.paragraphBig)}>
-            Imagine real-world problems, solved by innovative businesses,{" "}
-            <span css={ReusableStyles.boldWhite}>powered by the Tgrade blockchain</span>.
+            Real-world problems, solved by innovative businesses,{" "}
+            <span css={ReusableStyles.paragraphWhite}>powered by the Tgrade blockchain</span>.
           </p>
           <BtnLink
             text="Go to the Tgrade App"
-            link="https://try.tgrade.finance/"
+            link="https://dapp.tgrade.finance/"
             color="var(--color-black)"
             borderColor="var(--color-white)"
             backgroundColor="var(--color-white)"
           />
-        </FullBackgroundVideo>
+        </FullBackgroundImage>
       </section>
       <section id="people" ref={sectionRefs[1]}>
         <FullBackgroundImage
-          image="people-bg.png"
-          headingText="To bring people together"
+          image="platform-bg.png"
+          headingText="A public, decentralised blockchain"
           textColor="var(--color-black)"
           headingLevel={2}
-          align="center"
-          verticalAlign="start"
+          align="left"
+          verticalAlign="center"
         >
           <p css={cn(ReusableStyles.paragraphBlack, ReusableStyles.maxWidth2)}>
-            We want to drive the adoption of blockchain technology by making it usable and useful in the real
-            world. We are solving real-world problems by{" "}
-            <span css={ReusableStyles.emphasizedText}>bringing together people, businesses</span>, and{" "}
-            <span css={ReusableStyles.emphasizedText}>blockchain</span>.
+            The case for a public, decentralised, secure blockchain is strong. Public blockchains are
+            resilient by design as they are run by a group of independent node operators who are aligned
+            through a framework of incentives and punishments.
+            <br />
+            <br />
+            Tgrade is a chain that has been designed to support high value businesses in a very secure and
+            decentralised model that is robust and safe.
+          </p>
+        </FullBackgroundImage>
+      </section>
+      <section id="people" ref={sectionRefs[1]}>
+        <FullBackgroundImage
+          image="platform-bg.png"
+          headingText="Trusted Circles unleashed"
+          textColor="var(--color-black)"
+          headingLevel={2}
+          align="left"
+          verticalAlign="center"
+        >
+          <p css={cn(ReusableStyles.paragraphBlack, ReusableStyles.maxWidth2)}>
+            The biggest problem for regulated businesses or businesses that need to know about the origin of
+            funds or who they are dealing with is the pseudo-anonymous blockchain addresses.
+            <br />
+            <br />
+            The solution was to build an on-chain governance system that allowed for the creation and
+            maintenance of permissioned groups.
+            <br />
+            The permissioned groups are referred to in Tgrade as Trusted Circles.
+            <br />
+            <br />
+            Care was taken to ensure that the mechanism is self-sovereign and that whoever sets up and
+            maintains a Trusted Circle is free to decide the governance.
+            <br />
+            <br />
+            The Trusted Circles have the tools to issue digital assets and permission them to the group or to
+            link custom smart contracts to a Trusted Circle. Linking smart contracts and/or digital assets to
+            Trusted Circles ensure only those addresses that belong to the Trusted Circle can swap or transfer
+            assets that are tied to the Trusted Circle.
           </p>
         </FullBackgroundImage>
       </section>
       <section id="platform" ref={sectionRefs[2]}>
         <FullBackgroundImage
           image="platform-bg.png"
-          headingText="A Revolutionary Platform"
+          headingText="Articles"
           textColor="var(--color-black)"
           headingLevel={2}
-          align="center"
+          align="left"
           maxWidth={90}
         >
           <p css={ReusableStyles.paragraphBlack}>
-            Tgrade is built using revolutionary blockchain technology, smart contracts, and new forms of
-            decentralized autonomous organization. <span css={ReusableStyles.emphasizedText}>We solve</span>{" "}
-            the basic problem in public chains of pseudo anonymous addresses and{" "}
-            <span css={ReusableStyles.emphasizedText}>
-              the issues of not knowing who you are trading with
-            </span>{" "}
-            through Trusted Circles, a self-sovereign governance mechanism to allow you to create your own
-            groups with your own rules.
+            <br />
+            <a href="https://medium.com/tgradefinance/securitization-of-proof-of-stake-the-path-to-regulated-validators-9574f52c82e8">
+              <b>Securitization of Proof of Stake, the path to regulated validators?</b>
+            </a>
+            <br />
+
+            <a href="https://medium.com/tgradefinance/tgrade-trusted-circles-and-logistics-9f1a75f80fa9">
+              <b>Tgrade, Trusted Circles and Logistics</b>
+            </a>
+            <br />
+
+            <a href="https://medium.com/tgradefinance/tgrade-the-case-for-a-wholesale-cbdc-platform-5847cb683f61">
+              <b>Tgrade, the case for a wholesale CBDC platform</b>
+            </a>
+            <br />
+
+            <a href="https://medium.com/tgradefinance/tgrade-the-case-for-a-wholesale-cbdc-platform-5847cb683f61">
+              <b>Tgrade: The blockchain made for business</b>
+            </a>
           </p>
           <BtnLink
             text="Try Tgrade App"
-            link="https://try.tgrade.finance/"
+            link="https://dapp.tgrade.finance/"
             color="var(--color-white)"
             borderColor="var(--color-black)"
             backgroundColor="var(--color-black)"
@@ -86,39 +132,25 @@ const Home: NextPage = () => {
         </FullBackgroundImage>
         <FullBackgroundImage
           image="safe-bg.png"
-          headingText="We give businesses a safe blockchain home"
+          headingText="About Tgrade"
           textColor="var(--color-black)"
           headingLevel={2}
           align="right"
           maxWidth={51}
         >
           <p css={ReusableStyles.paragraphBlack}>
-            Tgrade is a home for businesses. By providing a central hub for commerce, and a neutral foundation
-            for businesses to interact with one another and their customers,{" "}
-            <span css={ReusableStyles.emphasizedText}>
-              we are helping to build a robust ecosystem for businesses to thrive in the new era of blockchain
-              technology.
-            </span>
+            Stichting Ocean Blue, incorporated in Amsterdam, Netherlands, is the legal entity behind Tgrade.
+            There is a written cvonstitution for Tgrade which sets out the rules, who has authority, and how
+            it is derived.
+            <br />
+            <br />A lot of work was done at the consensus layer to address the issues wer found in Proof of
+            Stake, which we implemented as Proof of Engagement. We opted not to include delegators, thus
+            making validators principals and not agents. The layers make a very robust chain and make us
+            confident that the value of the assets issued on Tgrade can far exceed the market capitalisation.
           </p>
         </FullBackgroundImage>
       </section>
-      <section id="business" ref={sectionRefs[3]}>
-        <FullBackgroundVideo
-          video="business-video-bg.mp4"
-          poster="business-video-poster.png"
-          headingText="Revolutionize your business with blockchain!"
-          textColor="var(--color-white)"
-          headingLevel={2}
-        >
-          <BtnLink
-            text="Try Tgrade App"
-            link="https://try.tgrade.finance/"
-            color="var(--color-black)"
-            borderColor="var(--color-white)"
-            backgroundColor="var(--color-white)"
-          />
-        </FullBackgroundVideo>
-      </section>
+      <section id="business" ref={sectionRefs[3]}></section>
       <section id="partner" ref={sectionRefs[4]}>
         <Partner headingText="Investor & Strategic partner" />
       </section>

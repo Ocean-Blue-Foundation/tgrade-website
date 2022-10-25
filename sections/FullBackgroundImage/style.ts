@@ -56,6 +56,8 @@ export const StyledContent = styled.div<StyledContent>`
   height: 100%;
   max-width: ${({ maxWidth }) => `${maxWidth}rem`};
   padding: 3rem 0 9rem;
+  margin-left: 25%;
+
   position: relative;
   z-index: 1;
 
