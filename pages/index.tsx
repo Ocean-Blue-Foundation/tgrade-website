@@ -165,7 +165,29 @@ const Home: NextPage = () => {
           </GlassWrapper>
         </FullBackgroundImage>
       </section>
-      <section id="business" ref={sectionRefs[3]}></section>
+      <section id="business" ref={sectionRefs[3]}>
+        <FullBackgroundImage
+          image="7.jpg"
+          textColor="var(--color-black)"
+          headingText=""
+          headingLevel={2}
+          align="center"
+          maxWidth={60}
+        >
+          <GlassWrapper>
+            <h1 style={{ fontSize: "32px", marginBottom: "30px" }}>Get Started</h1>
+            <p css={ReusableStyles.paragraphBlack}>
+              Depending on what your goal is there are various paths to Tgrade. You can check out the{" "}
+              <a href="https://dapp.tgrade.finance">App &#8594;</a> to start creating trusted circles and your
+              own digital assets.
+              <br />
+              <br />
+              If you want to start developing smart contracts for Tgrade or just browse the API please visit
+              our <a href="https://github.com/confio/tgrade-networks/wiki/Tgrade-home">Wiki &#8594;</a>{" "}
+            </p>
+          </GlassWrapper>
+        </FullBackgroundImage>
+      </section>
       <section id="partner" ref={sectionRefs[4]}>
         <Partner headingText="Investor & Strategic partner" />
       </section>
