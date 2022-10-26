@@ -167,7 +167,7 @@ const Home: NextPage = () => {
       </section>
       <section id="business" ref={sectionRefs[3]}>
         <FullBackgroundImage
-          image="7.jpg"
+          image="6.jpg"
           textColor="var(--color-black)"
           headingText=""
           headingLevel={2}
