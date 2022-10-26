@@ -18,20 +18,24 @@ const navLinks = [
     text: "Welcome",
   },
   {
-    link: "/#people",
-    text: "People",
+    link: "/#tgrade",
+    text: "Tgrade",
   },
   {
-    link: "/#platform",
-    text: "Platform",
+    link: "/#trustedcircles",
+    text: "Trusted Circles",
   },
   {
-    link: "/#business",
-    text: "Business",
+    link: "/#articles",
+    text: "Articles",
   },
   {
-    link: "/#partner",
-    text: "Partner",
+    link: "/#about",
+    text: "About",
+  },
+  {
+    link: "/#getstarted",
+    text: "Get Started",
   },
   // {
   //   link: "/#game-of-engagement",

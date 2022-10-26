@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           </GlassWrapper>
         </FullBackgroundImage>
       </section>
-      <section id="people" ref={sectionRefs[1]}>
+      <section id="tgrade" ref={sectionRefs[1]}>
         <FullBackgroundImage
           image="1.jpg"
           headingText=""
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
           </GlassWrapper>
         </FullBackgroundImage>
       </section>
-      <section id="people" ref={sectionRefs[1]}>
+      <section id="trustedcircles" ref={sectionRefs[2]}>
         <FullBackgroundImage
           image="3.jpg"
           headingText=""
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
           </GlassWrapper>
         </FullBackgroundImage>
       </section>
-      <section id="platform" ref={sectionRefs[2]}>
+      <section id="articles" ref={sectionRefs[3]}>
         <FullBackgroundImage
           image="5.jpg"
           headingText=""
@@ -141,6 +141,7 @@ const Home: NextPage = () => {
             />
           </GlassWrapper>
         </FullBackgroundImage>
+        <section id="about" ref={sectionRefs[4]}></section>
         <FullBackgroundImage
           image="7.jpg"
           textColor="var(--color-black)"
@@ -165,7 +166,7 @@ const Home: NextPage = () => {
           </GlassWrapper>
         </FullBackgroundImage>
       </section>
-      <section id="business" ref={sectionRefs[3]}>
+      <section id="getstarted" ref={sectionRefs[5]}>
         <FullBackgroundImage
           image="6.jpg"
           textColor="var(--color-black)"
@@ -182,8 +183,9 @@ const Home: NextPage = () => {
               own digital assets.
               <br />
               <br />
-              If you want to start developing smart contracts for Tgrade or just browse the API please visit
-              our <a href="https://github.com/confio/tgrade-networks/wiki/Tgrade-home">Wiki &#8594;</a>{" "}
+              If you want to start developing Cosmwasm smart contracts for Tgrade or just browse the API
+              please visit our{" "}
+              <a href="https://github.com/confio/tgrade-networks/wiki/Tgrade-home">Wiki &#8594;</a>{" "}
             </p>
           </GlassWrapper>
         </FullBackgroundImage>
