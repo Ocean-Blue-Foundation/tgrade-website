@@ -36,14 +36,6 @@ const Home: NextPage = () => {
               Real-world problems, solved by innovative businesses,{" "}
               <span css={ReusableStyles.paragraphBlack}>powered by the Tgrade blockchain</span>.
             </p>
-
-            <BtnLink
-              text="Go to the Tgrade App"
-              link="https://dapp.tgrade.finance/"
-              color="var(--color-black)"
-              borderColor="var(--color-white)"
-              backgroundColor="var(--color-white)"
-            />
           </GlassWrapper>
         </FullBackgroundImage>
       </section>
@@ -113,22 +105,34 @@ const Home: NextPage = () => {
             <h1 style={{ fontSize: "32px", marginBottom: "30px" }}>Articles</h1>
             <p css={ReusableStyles.paragraphBlack}>
               <br />
-              <a href="https://medium.com/tgradefinance/securitization-of-proof-of-stake-the-path-to-regulated-validators-9574f52c82e8">
+              <a
+                style={{ color: "white" }}
+                href="https://medium.com/tgradefinance/securitization-of-proof-of-stake-the-path-to-regulated-validators-9574f52c82e8"
+              >
                 <b>Securitization of Proof of Stake, the path to regulated validators?</b>
               </a>
               <br />
 
-              <a href="https://medium.com/tgradefinance/tgrade-trusted-circles-and-logistics-9f1a75f80fa9">
+              <a
+                style={{ color: "white" }}
+                href="https://medium.com/tgradefinance/tgrade-trusted-circles-and-logistics-9f1a75f80fa9"
+              >
                 <b>Tgrade, Trusted Circles and Logistics</b>
               </a>
               <br />
 
-              <a href="https://medium.com/tgradefinance/tgrade-the-case-for-a-wholesale-cbdc-platform-5847cb683f61">
+              <a
+                style={{ color: "white" }}
+                href="https://medium.com/tgradefinance/tgrade-the-case-for-a-wholesale-cbdc-platform-5847cb683f61"
+              >
                 <b>Tgrade, the case for a wholesale CBDC platform</b>
               </a>
               <br />
 
-              <a href="https://medium.com/tgradefinance/tgrade-the-case-for-a-wholesale-cbdc-platform-5847cb683f61">
+              <a
+                style={{ color: "white" }}
+                href="https://medium.com/tgradefinance/tgrade-the-case-for-a-wholesale-cbdc-platform-5847cb683f61"
+              >
                 <b>Tgrade: The blockchain made for business</b>
               </a>
             </p>
@@ -177,10 +181,17 @@ const Home: NextPage = () => {
         >
           <GlassWrapper>
             <h1 style={{ fontSize: "32px", marginBottom: "30px" }}>Get Started</h1>
+            <BtnLink
+              text="Try the Tgrade App"
+              link="https://dapp.tgrade.finance/"
+              color="var(--color-white)"
+              borderColor="var(--color-white)"
+              backgroundColor="var(--color-black)"
+            />{" "}
+            <div style={{ height: "25px" }} />
             <p css={ReusableStyles.paragraphBlack}>
-              Depending on what your goal is there are various paths to Tgrade. You can check out the{" "}
-              <a href="https://dapp.tgrade.finance">App &#8594;</a> to start creating trusted circles and your
-              own digital assets.
+              Depending on what your goal is there are various paths to Tgrade. You can try the App by
+              clicking the button above, start creating trusted circles and your own digital assets.
               <br />
               <br />
               If you want to start developing Cosmwasm smart contracts for Tgrade or just browse the API

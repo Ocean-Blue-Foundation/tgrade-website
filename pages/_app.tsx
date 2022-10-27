@@ -11,8 +11,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Tgrade</title>
         <link rel="icon" href="/favicon.ico" />
 
-        <meta property="og:title" content="The Big Bang of Regulated Blockchain" />
-        <meta property="twitter:title" content="The Big Bang of Regulated Blockchain" />
+        <meta property="og:title" content="Business solving real-world problems" />
+        <meta property="twitter:title" content="Business solving real-world problems" />
 
         <meta property="description" content="Business solving real-world problems." />
         <meta property="og:description" content="Business solving real-world problems." />
