@@ -73,12 +73,6 @@ export const StyledContainer = styled.div<Heading>`
         }
       }
     }
-
-    a:last-child {
-      color: var(--color-white);
-      border-color: var(--color-black);
-      background-color: var(--color-black);
-    }
   }
 
   ${({ alternateHeader }) =>
