@@ -136,13 +136,6 @@ const Home: NextPage = () => {
                 <b>Tgrade: The blockchain made for business</b>
               </a>
             </p>
-            <BtnLink
-              text="Try Tgrade App"
-              link="https://dapp.tgrade.finance/"
-              color="var(--color-white)"
-              borderColor="var(--color-black)"
-              backgroundColor="var(--color-black)"
-            />
           </GlassWrapper>
         </FullBackgroundImage>
         <section id="about" ref={sectionRefs[4]}></section>
