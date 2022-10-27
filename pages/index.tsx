@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import FullBackgroundImage from "../sections/FullBackgroundImage";
-import FullBackgroundVideo from "../sections/FullBackgroundVideo";
 import Partner from "../sections/Partner";
 import ReusableStyles from "../theme/ReusableStyles";
 import BtnLink from "../components/BtnLink";
@@ -8,6 +7,7 @@ import cn from "../utils/cn";
 import MainLayout from "../layouts/MainLayout";
 import useScrollSpy from "react-use-scrollspy";
 import { useRef } from "react";
+import { GlassWrapper } from "../components/GlassWrapper/style";
 
 const Home: NextPage = () => {
   const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
@@ -20,104 +20,175 @@ const Home: NextPage = () => {
   return (
     <MainLayout activeHeaderLink={activeHeaderLink}>
       <section id="welcome" ref={sectionRefs[0]}>
-        <FullBackgroundVideo
-          video="hero-video-bg.mp4"
-          poster="hero-video-poster.png"
-          headingText="Business solving real-world problems"
-          textColor="var(--color-white)"
-          maxWidth={100}
-        >
-          <p css={cn(ReusableStyles.paragraphWhite, ReusableStyles.maxWidth1, ReusableStyles.paragraphBig)}>
-            Imagine real-world problems, solved by innovative businesses,{" "}
-            <span css={ReusableStyles.boldWhite}>powered by the Tgrade blockchain</span>.
-          </p>
-          <BtnLink
-            text="Go to the Tgrade App"
-            link="https://try.tgrade.finance/"
-            color="var(--color-black)"
-            borderColor="var(--color-white)"
-            backgroundColor="var(--color-white)"
-          />
-        </FullBackgroundVideo>
-      </section>
-      <section id="people" ref={sectionRefs[1]}>
         <FullBackgroundImage
-          image="people-bg.png"
-          headingText="To bring people together"
+          image="2.jpg"
+          headingText=""
           textColor="var(--color-black)"
           headingLevel={2}
           align="center"
-          verticalAlign="start"
+          verticalAlign="center"
         >
-          <p css={cn(ReusableStyles.paragraphBlack, ReusableStyles.maxWidth2)}>
-            We want to drive the adoption of blockchain technology by making it usable and useful in the real
-            world. We are solving real-world problems by{" "}
-            <span css={ReusableStyles.emphasizedText}>bringing together people, businesses</span>, and{" "}
-            <span css={ReusableStyles.emphasizedText}>blockchain</span>.
-          </p>
+          <GlassWrapper>
+            <h1 style={{ fontSize: "32px", marginBottom: "10px" }}>Your Real World Assets</h1>
+            <br />
+            <h1 style={{ fontSize: "30px", marginBottom: "10px" }}>protected by Trusted Circles</h1>
+            <p css={cn(ReusableStyles.paragraphBlack, ReusableStyles.maxWidth1, ReusableStyles.paragraphBig)}>
+              Real-world problems, solved by innovative businesses,{" "}
+              <span css={ReusableStyles.paragraphBlack}>powered by the Tgrade blockchain</span>.
+            </p>
+
+            <BtnLink
+              text="Go to the Tgrade App"
+              link="https://dapp.tgrade.finance/"
+              color="var(--color-black)"
+              borderColor="var(--color-white)"
+              backgroundColor="var(--color-white)"
+            />
+          </GlassWrapper>
         </FullBackgroundImage>
       </section>
-      <section id="platform" ref={sectionRefs[2]}>
+      <section id="tgrade" ref={sectionRefs[1]}>
         <FullBackgroundImage
-          image="platform-bg.png"
-          headingText="A Revolutionary Platform"
+          image="1.jpg"
+          headingText=""
+          textColor="var(--color-black)"
+          headingLevel={2}
+          align="center"
+          verticalAlign="center"
+        >
+          <GlassWrapper>
+            <h1 style={{ fontSize: "32px", marginBottom: "10px" }}>A public, decentralised blockchain</h1>
+            <p css={cn(ReusableStyles.paragraphBlack, ReusableStyles.maxWidth2)}>
+              The case for a public, decentralised, secure blockchain is strong. Public blockchains are
+              resilient by design as they are run by a group of independent node operators who are aligned
+              through a framework of incentives and punishments.
+              <br />
+              <br />
+              Tgrade is a chain that has been designed to support high value businesses in a very secure and
+              decentralised model that is robust and safe.
+            </p>
+          </GlassWrapper>
+        </FullBackgroundImage>
+      </section>
+      <section id="trustedcircles" ref={sectionRefs[2]}>
+        <FullBackgroundImage
+          image="3.jpg"
+          headingText=""
+          textColor="var(--color-black)"
+          headingLevel={2}
+          align="center"
+          verticalAlign="center"
+        >
+          <GlassWrapper>
+            <h1 style={{ fontSize: "32px", marginBottom: "10px" }}>Trusted Circles unleashed</h1>
+            <p css={cn(ReusableStyles.paragraphBlack, ReusableStyles.maxWidth2)}>
+              The biggest problem for regulated businesses or businesses that need to know about the origin of
+              funds or who they are dealing with is the pseudo-anonymous blockchain addresses.
+              <br />
+              <br />
+              The solution was to build an on-chain governance system that allowed for the creation and
+              maintenance of permissioned groups.
+              <br />
+              The permissioned groups are referred to in Tgrade as Trusted Circles.
+              <br />
+              <br />
+              Care was taken to ensure that the mechanism is self-sovereign and that whoever sets up and
+              maintains a Trusted Circle is free to decide the governance.
+              <br />
+              <br />
+            </p>
+          </GlassWrapper>
+        </FullBackgroundImage>
+      </section>
+      <section id="articles" ref={sectionRefs[3]}>
+        <FullBackgroundImage
+          image="5.jpg"
+          headingText=""
           textColor="var(--color-black)"
           headingLevel={2}
           align="center"
           maxWidth={90}
         >
-          <p css={ReusableStyles.paragraphBlack}>
-            Tgrade is built using revolutionary blockchain technology, smart contracts, and new forms of
-            decentralized autonomous organization. <span css={ReusableStyles.emphasizedText}>We solve</span>{" "}
-            the basic problem in public chains of pseudo anonymous addresses and{" "}
-            <span css={ReusableStyles.emphasizedText}>
-              the issues of not knowing who you are trading with
-            </span>{" "}
-            through Trusted Circles, a self-sovereign governance mechanism to allow you to create your own
-            groups with your own rules.
-          </p>
-          <BtnLink
-            text="Try Tgrade App"
-            link="https://try.tgrade.finance/"
-            color="var(--color-white)"
-            borderColor="var(--color-black)"
-            backgroundColor="var(--color-black)"
-          />
+          <GlassWrapper>
+            <h1 style={{ fontSize: "32px", marginBottom: "30px" }}>Articles</h1>
+            <p css={ReusableStyles.paragraphBlack}>
+              <br />
+              <a href="https://medium.com/tgradefinance/securitization-of-proof-of-stake-the-path-to-regulated-validators-9574f52c82e8">
+                <b>Securitization of Proof of Stake, the path to regulated validators?</b>
+              </a>
+              <br />
+
+              <a href="https://medium.com/tgradefinance/tgrade-trusted-circles-and-logistics-9f1a75f80fa9">
+                <b>Tgrade, Trusted Circles and Logistics</b>
+              </a>
+              <br />
+
+              <a href="https://medium.com/tgradefinance/tgrade-the-case-for-a-wholesale-cbdc-platform-5847cb683f61">
+                <b>Tgrade, the case for a wholesale CBDC platform</b>
+              </a>
+              <br />
+
+              <a href="https://medium.com/tgradefinance/tgrade-the-case-for-a-wholesale-cbdc-platform-5847cb683f61">
+                <b>Tgrade: The blockchain made for business</b>
+              </a>
+            </p>
+            <BtnLink
+              text="Try Tgrade App"
+              link="https://dapp.tgrade.finance/"
+              color="var(--color-white)"
+              borderColor="var(--color-black)"
+              backgroundColor="var(--color-black)"
+            />
+          </GlassWrapper>
         </FullBackgroundImage>
+        <section id="about" ref={sectionRefs[4]}></section>
         <FullBackgroundImage
-          image="safe-bg.png"
-          headingText="We give businesses a safe blockchain home"
+          image="7.jpg"
           textColor="var(--color-black)"
+          headingText=""
           headingLevel={2}
-          align="right"
-          maxWidth={51}
+          align="center"
+          maxWidth={60}
         >
-          <p css={ReusableStyles.paragraphBlack}>
-            Tgrade is a home for businesses. By providing a central hub for commerce, and a neutral foundation
-            for businesses to interact with one another and their customers,{" "}
-            <span css={ReusableStyles.emphasizedText}>
-              we are helping to build a robust ecosystem for businesses to thrive in the new era of blockchain
-              technology.
-            </span>
-          </p>
+          <GlassWrapper>
+            <h1 style={{ fontSize: "32px", marginBottom: "30px" }}>About Tgrade</h1>
+            <p css={ReusableStyles.paragraphBlack}>
+              Stichting Ocean Blue, incorporated in Amsterdam, Netherlands, is the legal entity behind Tgrade.
+              There is a written constitution for Tgrade which sets out the rules, who has authority, and how
+              it is derived.
+              <br />
+              <br />A lot of work was done at the consensus layer to address the issues we found in Proof of
+              Stake, which we implemented as Proof of Engagement. We opted not to include delegators, thus
+              making validators principals and not agents. The layers make a very robust chain and make us
+              confident that the value of the assets issued on Tgrade can far exceed the market
+              capitalisation.
+            </p>
+          </GlassWrapper>
         </FullBackgroundImage>
       </section>
-      <section id="business" ref={sectionRefs[3]}>
-        <FullBackgroundVideo
-          video="business-video-bg.mp4"
-          poster="business-video-poster.png"
-          headingText="Revolutionize your business with blockchain!"
-          textColor="var(--color-white)"
+      <section id="getstarted" ref={sectionRefs[5]}>
+        <FullBackgroundImage
+          image="6.jpg"
+          textColor="var(--color-black)"
+          headingText=""
           headingLevel={2}
+          align="center"
+          maxWidth={60}
         >
-          <BtnLink
-            text="Try Tgrade App"
-            link="https://try.tgrade.finance/"
-            color="var(--color-black)"
-            borderColor="var(--color-white)"
-            backgroundColor="var(--color-white)"
-          />
-        </FullBackgroundVideo>
+          <GlassWrapper>
+            <h1 style={{ fontSize: "32px", marginBottom: "30px" }}>Get Started</h1>
+            <p css={ReusableStyles.paragraphBlack}>
+              Depending on what your goal is there are various paths to Tgrade. You can check out the{" "}
+              <a href="https://dapp.tgrade.finance">App &#8594;</a> to start creating trusted circles and your
+              own digital assets.
+              <br />
+              <br />
+              If you want to start developing Cosmwasm smart contracts for Tgrade or just browse the API
+              please visit our{" "}
+              <a href="https://github.com/confio/tgrade-networks/wiki/Tgrade-home">Wiki &#8594;</a>{" "}
+            </p>
+          </GlassWrapper>
+        </FullBackgroundImage>
       </section>
       <section id="partner" ref={sectionRefs[4]}>
         <Partner headingText="Investor & Strategic partner" />

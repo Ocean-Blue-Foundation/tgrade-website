@@ -29,7 +29,7 @@ const FullBackgroundImage: React.FunctionComponent<FullBackgroundImageProps> = (
         </p>
         <BtnLink
           text="Create Trusted Circle"
-          link="https://try.tgrade.finance/"
+          link="https://dapp.tgrade.finance/"
           color="var(--color-white)"
           borderColor="var(--color-black)"
           backgroundColor="var(--color-black)"

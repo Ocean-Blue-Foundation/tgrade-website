@@ -6,6 +6,7 @@ const ReusableStyles = {
   `,
   paragraphBlack: css`
     color: var(--color-black);
+    font-weight: 500;
   `,
   paragraphBig: css`
     font-size: 2.4rem;
@@ -14,6 +15,10 @@ const ReusableStyles = {
   emphasizedText: css`
     color: var(--color-black);
     text-transform: uppercase;
+    font-weight: bold;
+  `,
+  emphasizedText2: css`
+    color: var(--color-black);
     font-weight: bold;
   `,
   copyright: css`
