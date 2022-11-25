@@ -193,7 +193,10 @@ const PrivacyContent = () => {
             <li>7th Floor. Potsdamer Platz 1</li>
             <li>10785 Berlin</li>
             <li>
-              Email: <StyledRegularLink href="hello@confio.gmbh">hello@confio.gmbh</StyledRegularLink>
+              Email:{" "}
+              <StyledRegularLink href="hallo@oceanblue.foundation">
+                hallo@oceanblue.foundation
+              </StyledRegularLink>
             </li>
           </ul>
         </StyledContentBlock>
@@ -230,7 +233,10 @@ const PrivacyContent = () => {
             Confio Gmb <span>7th Floor. Potsdamer Platz 1 10785 Berlin Germany</span>
           </p>
           <p>
-            Email: <StyledRegularLink href="hello@confio.gmbh">hello@confio.gmbh</StyledRegularLink>
+            Email:{" "}
+            <StyledRegularLink href="hallo@oceanblue.foundation">
+              hallo@oceanblue.foundation
+            </StyledRegularLink>
           </p>
         </StyledContentBlock>
       </StyledContainer>

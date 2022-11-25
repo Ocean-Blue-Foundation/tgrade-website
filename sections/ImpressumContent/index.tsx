@@ -45,7 +45,9 @@ const ImpressumContent = () => {
         <StyledContentBlock>
           <Heading level={2} text="Contact / Kontakt:" cssHeading={heading} />
           <p>
-            <StyledRegularLink href="hello@confio.gmbh">hello@confio.gmbh</StyledRegularLink>
+            <StyledRegularLink href="hallo@oceanblue.foundation">
+              hallo@oceanblue.foundation
+            </StyledRegularLink>
           </p>
         </StyledContentBlock>
         <StyledContentBlock>
