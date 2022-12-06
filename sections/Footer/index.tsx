@@ -30,8 +30,8 @@ const Footer = () => {
           </FooterNav>
           <Wrapper>
             <p css={ReusableStyles.paragraphWhite}>Contact us</p>
-            <Link href="mailto:hello@confio.gmbh" passHref={true}>
-              <StyledEmailLink>hello@confio.gmbh</StyledEmailLink>
+            <Link href="mailto:hallo@oceanblue.foundation" passHref={true}>
+              <StyledEmailLink>hallo@oceanblue.foundation</StyledEmailLink>
             </Link>
             <SocialIcons />
           </Wrapper>
