@@ -1,6 +1,6 @@
 import { StyledSocialIcons, StyledImage } from "./style";
 import Link from "next/link";
-
+import Image from "next/image";
 const SocialIcons = () => {
   return (
     <StyledSocialIcons>
@@ -48,6 +48,11 @@ const SocialIcons = () => {
               fill="#fff"
             />
           </svg>
+        </StyledImage>
+      </Link>
+      <Link href="https://blockspot.io/coin/tgrade/" passHref={true}>
+        <StyledImage target="_blank">
+          <Image src="/blockspot.png" alt="ignite" layout="fill" objectFit="contain" />
         </StyledImage>
       </Link>
     </StyledSocialIcons>
