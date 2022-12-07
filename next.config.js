@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const repo = "change-me-to-your-repo";
+const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
+
 const assetPrefix = `/${repo}/`;
 const basePath = `/${repo}`;
 const nextConfig = {
