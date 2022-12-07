@@ -50,7 +50,6 @@ const SocialIcons = () => {
           </svg>
         </StyledImage>
       </Link>
-      <Link href="https://blockspot.io/coin/tgrade/" passHref={true}></Link>
     </StyledSocialIcons>
   );
 };
