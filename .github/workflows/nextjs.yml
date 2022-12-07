@@ -28,8 +28,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-      env:
-      NEXT_PUBLIC_BASE_PATH: /tgrade-website
+    env:
+    NEXT_PUBLIC_BASE_PATH: /tgrade-website
 
     steps:
       - name: Checkout
