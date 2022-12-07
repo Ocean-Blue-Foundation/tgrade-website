@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { device } from "../../theme/Breakpoints";
 import { setSize } from "../../theme/Functions";
-
+import { prefix } from "../../utils/prefix.js";
 interface Link {
   active: boolean;
 }
