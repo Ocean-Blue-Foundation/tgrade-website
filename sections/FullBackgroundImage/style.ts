@@ -15,7 +15,7 @@ interface StyledContent {
 
 export const StyledContainer = styled.div<StyledFullBackgroundImage>`
   height: 79rem;
-  background-image: ${({ image }) => (image ? `url(/${image})` : "")};
+  background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
