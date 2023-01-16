@@ -29,7 +29,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /tgrade-website
+      # Base path without a trailing slash
+      NEXT_PUBLIC_BASE_PATH: ""
 
     steps:
       - name: Checkout
