@@ -5,12 +5,12 @@ import MainContainer from "../../containers/MainContainer";
 import Image from "next/image";
 import { baseUrl } from "../../utils/prefix";
 
-interface SubscribeSectionProps {
+interface PartnerProps {
   headingText: string;
   textColor?: string;
 }
 
-const SubscribeSection: React.FunctionComponent<SubscribeSectionProps> = ({ headingText, textColor }) => {
+const Partner: React.FunctionComponent<PartnerProps> = ({ headingText, textColor }) => {
   return (
     <StyledContainer>
       <MainContainer>
@@ -25,4 +25,4 @@ const SubscribeSection: React.FunctionComponent<SubscribeSectionProps> = ({ head
   );
 };
 
-export default SubscribeSection;
+export default Partner;
