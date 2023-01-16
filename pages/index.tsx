@@ -8,7 +8,7 @@ import MainLayout from "../layouts/MainLayout";
 import useScrollSpy from "react-use-scrollspy";
 import { useRef } from "react";
 import { GlassWrapper } from "../components/GlassWrapper/style";
-import { prefix } from "../utils/prefix.js";
+import { baseUrl } from "../utils/prefix.js";
 
 const Home: NextPage = () => {
   const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
     <MainLayout activeHeaderLink={activeHeaderLink}>
       <section id="welcome" ref={sectionRefs[0]}>
         <FullBackgroundImage
-          image={`${prefix}/2.jpg`}
+          image={`${baseUrl}/2.jpg`}
           headingText=""
           textColor="var(--color-black)"
           headingLevel={2}
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
       </section>
       <section id="tgrade" ref={sectionRefs[1]}>
         <FullBackgroundImage
-          image={`${prefix}/1.jpg`}
+          image={`${baseUrl}/1.jpg`}
           headingText=""
           textColor="var(--color-black)"
           headingLevel={2}
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
       </section>
       <section id="trustedcircles" ref={sectionRefs[2]}>
         <FullBackgroundImage
-          image={`${prefix}/3.jpg`}
+          image={`${baseUrl}/3.jpg`}
           headingText=""
           textColor="var(--color-black)"
           headingLevel={2}
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
       </section>
       <section id="articles" ref={sectionRefs[3]}>
         <FullBackgroundImage
-          image={`${prefix}/4.jpg`}
+          image={`${baseUrl}/4.jpg`}
           headingText=""
           textColor="var(--color-black)"
           headingLevel={2}
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
         </FullBackgroundImage>
         <section id="about" ref={sectionRefs[4]}></section>
         <FullBackgroundImage
-          image={`${prefix}/7.jpg`}
+          image={`${baseUrl}/7.jpg`}
           textColor="var(--color-black)"
           headingText=""
           headingLevel={2}
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
       </section>
       <section id="getstarted" ref={sectionRefs[5]}>
         <FullBackgroundImage
-          image={`${prefix}/6.jpg`}
+          image={`${baseUrl}/6.jpg`}
           textColor="var(--color-black)"
           headingText=""
           headingLevel={2}

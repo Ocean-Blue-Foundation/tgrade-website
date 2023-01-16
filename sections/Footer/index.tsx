@@ -13,6 +13,7 @@ import SvgLogo from "../../components/SvgLogo";
 import SocialIcons from "../../components/SocialIcons";
 import ReusableStyles from "../../theme/ReusableStyles";
 import Link from "next/link";
+import { baseUrl } from "../../utils/prefix";
 
 const Footer = () => {
   return (
@@ -24,9 +25,9 @@ const Footer = () => {
             <p css={ReusableStyles.copyright}>© {new Date().getFullYear()} by Stichting Ocean Blue</p>
           </WrapperLeft>
           <FooterNav>
-            <FooterLink text="Privacy Policy" link="/privacy-policy" />
-            <FooterLink text="Press kit" link="/press-kit" />
-            <FooterLink text="Impressum" link="/impressum" />
+            <FooterLink text="Privacy Policy" link={`${baseUrl}/privacy-policy`} />
+            <FooterLink text="Press kit" link={`${baseUrl}/press-kit`} />
+            <FooterLink text="Impressum" link={`${baseUrl}/impressum`} />
           </FooterNav>
           <Wrapper>
             <p css={ReusableStyles.paragraphWhite}>Contact us</p>
