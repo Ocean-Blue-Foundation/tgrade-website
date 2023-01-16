@@ -3,6 +3,7 @@ import Heading from "../../components/Heading";
 import React from "react";
 import MainContainer from "../../containers/MainContainer";
 import Image from "next/image";
+import { baseUrl } from "../../utils/prefix";
 
 interface SubscribeSectionProps {
   headingText: string;
@@ -16,7 +17,7 @@ const SubscribeSection: React.FunctionComponent<SubscribeSectionProps> = ({ head
         <StyledContent>
           <Heading level={2} text={headingText} cssHeading={heading} textColor={textColor} />
           <StyledImage>
-            <Image src="/ignite-logo.png" alt="ignite" layout="fill" objectFit="contain" />
+            <Image src={`${baseUrl}/ignite-logo.png`} alt="ignite" layout="fill" objectFit="contain" />
           </StyledImage>
         </StyledContent>
       </MainContainer>

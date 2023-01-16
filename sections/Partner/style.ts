@@ -1,16 +1,17 @@
 import styled, { css } from "styled-components";
 import { device } from "../../theme/Breakpoints";
+import { baseUrl } from "../../utils/prefix";
 
 export const StyledContainer = styled.div`
   height: 30rem;
-  background-image: url("/partner-bg.jpg");
+  background-image: url("${baseUrl}/partner-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   width: 100%;
 
   @media ${device.tablet} {
-    background-image: url("/partner-bg-mobile.jpg");
+    background-image: url("${baseUrl}/partner-bg-mobile.jpg");
     background-size: contain;
     height: 30.8rem;
   }
