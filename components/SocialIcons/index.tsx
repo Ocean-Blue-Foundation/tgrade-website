@@ -50,6 +50,14 @@ const SocialIcons = () => {
           </svg>
         </StyledImage>
       </Link>
+      <Link href="https://blockspot.io/coin/tgrade/" passHref={true}>
+        <StyledImage target="_blank">
+          <svg width={30} height={30} fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15Z" fill="white"/>
+            <path fillRule="evenodd" clipRule="evenodd" d="M11.5583 6L9.01046 7.41093V14.0535L9 14.0592V20.6863L15 23.9999L21 20.6863V14.0592L15 10.7457L11.5583 12.6464V6ZM11.555 19.0404H11.5583V15.4688L15.0002 13.568L18.4453 15.4706V19.2758L15.0002 21.1784L11.555 19.2758V19.0404Z" fill="#1A1D26"/>
+          </svg>
+        </StyledImage>
+      </Link>
     </StyledSocialIcons>
   );
 };
